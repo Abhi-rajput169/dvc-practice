@@ -11,6 +11,9 @@ df=pd.DataFrame(data)
 data_dir='data'
 os.makedirs(data_dir,exist_ok=True)
 
+
+#adding the new files in the data
+df.loc[len(df)]=['abhi','pwalwl','21']
 #define the file path
 
 file_path= os.path.join(data_dir,'sample_data.csv')
